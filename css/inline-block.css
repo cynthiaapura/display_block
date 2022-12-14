@@ -1,0 +1,71 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    background-color: #222;
+}
+body{
+    font: 1.6rem "Roboto Slab", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+h1,h2,h3,h4,h5,h6,
+ul,ol,p,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+a{
+    text-decoration: none; /*raccourci*/
+    color: #222;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: inherit; /* inherit = héritage du body */
+ }
+/* theme */
+header h1{
+    text-align: center;
+    line-height: 8rem;
+    color: #fff;
+    font-weight: 200;
+}
+/* grid */
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    background-color: #fff;
+}
+.gallery-primary ul{
+    padding: 1rem 0 0 1rem;
+    font-size: 0; /*enleve les espacements par defaut  */
+}
+.gallery-primary ul li{ /* on organise les images de sortes quelles soient les unes a cotes des autres */
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+    width: calc(100% / 4 - 1rem);
+    
+}
+.gallery-primary ul li:nth-child(5), :is(ul li:nth-child(6)){
+    width: calc(100% / 2 - 1rem);
+}
+.gallery-primary ul li:nth-child(7){
+    width: calc(100% / 1 - 1rem);
+}
+footer *{
+    text-align: center;
+    color: #fff;
+}
