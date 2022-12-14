@@ -2,7 +2,7 @@
 
 Cours sur les display-block et inline.
 
-[Lien vers le projet](https://capura94.github.io/display-block-22/)
+[Lien vers le projet](https://cynthiaapura.github.io/display_block/)
 
 >Exemple de code HTML
 ```html 
