@@ -1,6 +1,6 @@
 # Les display-block CSS
 
-Cours sur les display-block et inline.
+Cours sur les display.
 
 [Lien vers le projet](https://cynthiaapura.github.io/display_block/)
 
