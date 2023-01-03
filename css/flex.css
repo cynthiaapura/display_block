@@ -1,0 +1,81 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    background-color: #222;
+}
+body{
+    font: 1.6rem "Roboto Slab", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+h1,h2,h3,h4,h5,h6,
+ul,ol,p,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+a{
+    text-decoration: none; /*raccourci*/
+    color: #222;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: inherit; /* inherit = héritage du body */
+ }
+/* theme */
+header h1{
+    text-align: center;
+    line-height: 8rem;
+    color: #fff;
+    font-weight: 200;
+}
+/* grid */
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    background-color: #fff;
+}
+/* grid */
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    background-color: #fff;
+}
+.gallery-primary ul{
+    display: flex; /* flex pour flexibilité */
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; /* tous les elements reviennent a la ligne */
+}
+.gallery-primary ul li{
+    flex-grow: 1; /* cela prend toute la place disponible */
+    flex-shrink: 0; /* autorise aux petits elements de s'ajouter 0 on n'autorise pas 1 on autorise (booleen) */
+    flex-basis: calc(100% / 4); /* donne la taille en unites */
+}
+.gallery-primary ul li:nth-child(7){ /* mettre la colonne en premier 1 / 5 */
+    flex-basis: calc(100% / 1);
+}
+.gallery-primary ul li:nth-child(8){ /* mettre la colonne en premier 1 / 5 */
+    flex-basis: calc(100% / 4);
+}
+footer p{
+    text-align: center;
+    color: #fff;
+}
