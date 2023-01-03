@@ -79,3 +79,20 @@ footer p{
     text-align: center;
     color: #fff;
 }
+/* version mobile */
+@media screen and (max-width: 100rem) {
+    header h1{
+        font-size: 1.9rem;
+        line-height: 3.5rem;
+    }
+    .gallery-primary ul li{
+        flex-basis: calc(100% / 3); /* donne la taille en unites */
+    }
+    .gallery-primary ul li:nth-child(7){ /* mettre la colonne en premier 1 / 5 */
+        flex-basis: calc(100% / 1);
+    }
+    .gallery-primary ul li:nth-child(8){ /* mettre la colonne en premier 1 / 5 */
+        flex-basis: calc(100% / 3);
+    }
+    
+}
